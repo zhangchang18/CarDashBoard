@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>1024</width>
+      <height>540</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="HomeScreen" name="home"/>
+    <widget class="Theme" name="theme"/>
+    <widget class="AirScreen" name="air"/>
+    <widget class="Caricon" name="icon"/>
+    <widget class="Map" name="map"/>
+   </widget>
+   <widget class="Bottom" name="bottom" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>560</y>
+      <width>1024</width>
+      <height>60</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>HomeScreen</class>
+   <extends>QWidget</extends>
+   <header location="global">homescreen.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AirScreen</class>
+   <extends>QWidget</extends>
+   <header location="global">airscreen.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Theme</class>
+   <extends>QWidget</extends>
+   <header location="global">theme.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Bottom</class>
+   <extends>QWidget</extends>
+   <header location="global">bottom.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Caricon</class>
+   <extends>QWidget</extends>
+   <header location="global">caricon.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Map</class>
+   <extends>QWidget</extends>
+   <header location="global">map.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
